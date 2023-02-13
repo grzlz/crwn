@@ -24,14 +24,12 @@ const App = () => {
   ]
   return (
     <div className="categories-container">
-      {categories.map(category =>  
-          <div className="category-container">
-            <div className="category-body-container">
-              <h2>{category.title}</h2>
-              <p>Shop now</p>
-            </div>
-          </div>
-        )}
+      {[
+        <div className="category-container"><div className="category-body-container"><h2>{categories[0].title}</h2><p>Shop now</p></div></div>,
+        <div className="category-container"><div className="category-body-container"><h2>{categories[1].title}</h2><p>Shop now</p></div></div>,
+        <div className="category-container"><div className="category-body-container"><h2>{categories[2].title}</h2><p>Shop now</p></div></div>,
+
+      ]}
 
     </div>
   );
