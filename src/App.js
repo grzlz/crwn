@@ -24,8 +24,8 @@ const App = () => {
   ]
   return (
     <div className="categories-container">
-      {categories.map(category => 
-        <div className="category-container"><div className="category-body-container"><h2>{category.title}</h2><p>Shop now</p></div></div>
+      {categories.map(
+        category => <div className="category-container"><div className="category-body-container"><h2>{category.title}</h2><p>Shop now</p></div></div>
         )
       }
 
